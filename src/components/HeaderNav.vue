@@ -29,6 +29,7 @@ export default defineComponent({
   box-shadow: 1px 0 7px 2px rgb(186, 175, 223);
   background: linear-gradient(65deg, rgb(143, 175, 194), rgb(186, 175, 223));
   margin-bottom: 20px;
+  max-height: 10%;
 
   span {
     display: flex;

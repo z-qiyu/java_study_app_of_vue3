@@ -24,11 +24,37 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import start1 from "../components/Pages/Start-1.vue";
+import start2 from "../components/Pages/Start-2.vue";
+import start3 from "../components/Pages/Start-3.vue";
+import start4 from "../components/Pages/Start-4.vue";
+import start5 from "../components/Pages/Start-5.vue";
+import start6 from "../components/Pages/Start-6.vue";
+import start7 from "../components/Pages/Start-7.vue";
+import start8 from "../components/Pages/Start-8.vue";
+import start9 from "../components/Pages/Start-9.vue";
+import start10 from "../components/Pages/Start-10.vue";
+import start11 from "../components/Pages/Start-11.vue";
+import start12 from "../components/Pages/Start-12.vue";
+import start13 from "../components/Pages/Start-13.vue";
+import start14 from "../components/Pages/Start-14.vue";
 
 export default defineComponent({
   name: "HomeContext",
   components: {
     start1: start1,
+    start2: start2,
+    start3: start3,
+    start4: start4,
+    start5: start5,
+    start6: start6,
+    start7: start7,
+    start8: start8,
+    start9: start9,
+    start10: start10,
+    start11: start11,
+    start12: start12,
+    start13: start13,
+    start14: start14,
   },
   data() {
     return {
@@ -62,6 +88,8 @@ export default defineComponent({
   right: 20%;
   box-shadow: 1px 0 3px 1px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  max-height: 88%;
+  overflow-y: scroll;
 
   #main {
     background-image: url("../assets/java.jpg");
@@ -105,5 +133,66 @@ export default defineComponent({
       font-weight: bold;
     }
   }
+}
+</style>
+
+<style lang="scss">
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 98%;
+  padding: 10px 1%;
+
+  h2 {
+    text-align: start;
+    width: 100%;
+  }
+
+  .button {
+    text-decoration-line: none;
+    padding: 10px 30px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background: linear-gradient(65deg, rgb(52, 117, 179), rgb(17, 94, 184));
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  h4 {
+    text-align: start;
+    width: 100%;
+  }
+
+  img {
+    width: 98%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    width: 100%;
+    text-align: start;
+  }
+
+  pre {
+    width: 98%;
+    padding: 1em 1%;
+    margin: 0;
+    margin-bottom: 20px;
+
+    code {
+      width: 100%;
+    }
+  }
+}
+
+.highlight {
+  color: rgb(173, 14, 126);
+  font-size: large;
+  font-weight: bold;
 }
 </style>
